@@ -1,0 +1,35 @@
+name: phishing_detector
+description: Offline AI-powered phishing URL detector
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # TFLite inference
+  tflite_flutter: ^0.12.1
+  # Local DB for history
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+  # URL launcher (open links in browser)
+  url_launcher: ^6.2.4
+  
+  # Icons
+  cupertino_icons: ^1.0.6
+  # Share sheet
+  share_plus: ^13.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/phishing_model.tflite
+    - assets/scaler_params.json
