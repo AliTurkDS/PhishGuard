@@ -4,6 +4,12 @@ Offline AI-powered phishing URL detector. Classifies URLs as **Benign**, **Phish
 
 ---
 
+## Screenshots
+
+<img src="screenshot/1.jpeg" alt="PhishGuard Home Screen" width="300"/>
+
+---
+
 ## Project structure
 
 ```
